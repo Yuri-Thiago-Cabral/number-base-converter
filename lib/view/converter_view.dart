@@ -19,7 +19,7 @@ class _ConverterViewState extends State<ConverterView> {
 
   List<DropdownMenuItem<String>> menuItems = const [
     DropdownMenuItem(value: 'decimal', child: Text('decimal')),
-    DropdownMenuItem(value: 'binary', child: Text('binário')),
+    DropdownMenuItem(value: 'binário', child: Text('binary')),
   ];
 
   @override
