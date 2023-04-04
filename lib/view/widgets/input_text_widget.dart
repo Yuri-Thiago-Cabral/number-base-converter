@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class InputTextWidget extends StatefulWidget {
   final String hintText;
-  final String label,
+  final String label;
   final TextInputType keyboardType;
   final TextEditingController controller;
   final Function onChanged;

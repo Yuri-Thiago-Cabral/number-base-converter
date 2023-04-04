@@ -64,7 +64,7 @@ class _ConverterViewState extends State<ConverterView> {
                     });
                   },
                   hintText: 'Valor a ser convertido',
-                  label: 'Insira um valor para a conversão'
+                  label: 'Insira um valor para a conversão',
                   keyboardType: TextInputType.number,
                 ),
                 const SizedBox(height: 16),
