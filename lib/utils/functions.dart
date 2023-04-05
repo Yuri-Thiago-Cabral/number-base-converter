@@ -35,19 +35,19 @@ class Functions {
   }
 
   // Utils
-  static _getResult(String numberText, int radix) {
+  static String _getResult(String sequence, int radix) {
     try {
-      var result = int.tryParse(numberText)?.toRadixString(radix).toUpperCase();
+      var result = int.tryParse(sequence)?.toRadixString(radix).toUpperCase();
       return result ?? '';
     } catch (e) {
       return '';
     }
   }
 
-  static _getResultExplicitRadix(String sequence, int radix) {
+  static String _getResultExplicitRadix(String sequence, int radix) {
     try {
-      var result = int.tryParse(sequence, radix: radix);
-      return result != null ? result.toString() : '';
+      var result = int.tryParse(sequence, radix: radix)?.toString();
+      return result ?? '';
     } catch (e) {
       return '';
     }

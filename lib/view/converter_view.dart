@@ -89,7 +89,7 @@ class _ConverterViewState extends State<ConverterView> {
                     color: const Color(0xFFD4D1D1),
                     child: Center(
                       child: Text(
-                        getDigits(_controller.value.text, selectedItem)[
+                        getConvertedSequence(_controller.value.text, selectedItem)[
                                 'decimal'] ??
                             '',
                         style: const TextStyle(
@@ -109,7 +109,7 @@ class _ConverterViewState extends State<ConverterView> {
                     color: const Color(0xFFD4D1D1),
                     child: Center(
                       child: Text(
-                        getDigits(_controller.value.text, selectedItem)[
+                        getConvertedSequence(_controller.value.text, selectedItem)[
                                 'binary'] ??
                             '',
                         style: const TextStyle(
@@ -129,7 +129,7 @@ class _ConverterViewState extends State<ConverterView> {
                     color: const Color(0xFFD4D1D1),
                     child: Center(
                       child: Text(
-                        getDigits(
+                        getConvertedSequence(
                                 _controller.value.text, selectedItem)['hex'] ??
                             '',
                         style: const TextStyle(
@@ -149,7 +149,7 @@ class _ConverterViewState extends State<ConverterView> {
     );
   }
 
-  HashMap<String, String> getDigits(String value, String option) {
+  HashMap<String, String> getConvertedSequence(String value, String option) {
     HashMap<String, String> values = HashMap();
 
     switch (option) {
